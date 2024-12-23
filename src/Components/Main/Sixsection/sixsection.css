@@ -1,0 +1,37 @@
+.six{
+    width: 100%;
+}
+.offcan {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(https://preview.colorlib.com/theme/logistico/img/about/0ffcan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    gap: 30px;
+
+    h3 {
+        span{
+            color: #FF3414;
+            font-weight: 700;
+            font-size: 46px;
+        }
+        color: #FF3414;
+        font-weight: 500;
+        font-size: 46px;
+        margin-bottom: 5px;
+    }
+    p{
+        color: #596672;
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .single{
+        padding: 30px;
+        margin: 30px;
+    }
+}

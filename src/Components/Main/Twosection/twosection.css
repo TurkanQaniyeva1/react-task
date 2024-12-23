@@ -1,0 +1,38 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 0;
+
+    .cardd {
+        width: 280px;
+        margin: 20px 30px;
+        padding: 10px;
+        &:hover h3{
+            color: #FF3414;
+            transition: color 0.3s ease-in-out;
+        }
+        .icon{
+            height: 50px;
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #001D38;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #919191;
+        }
+    }

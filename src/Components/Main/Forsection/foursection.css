@@ -1,0 +1,84 @@
+.foursection {
+    background: url(https://preview.colorlib.com/theme/logistico/img/banner/contact_bg.png);
+    height: 400px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin:0 0 30px 0;
+    &::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #001D38;
+        opacity: .7;
+        z-index: 1;
+        content: '';
+    }
+}
+
+.secure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    gap: 30px;
+
+    .left {
+
+        h3 {
+            font-size: 46px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 13px;
+        }
+
+        p {
+            color: #EAEAEA;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .right {
+        .btn {
+            background: #FF3414;
+            color: #fff;
+            padding: 18px 42px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            border: 1px solid transparent;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+            border-radius: 100px;
+            font-size: 26px;
+            &:hover{
+                background-color: #fff;
+                color: #000;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .secure{
+        .right{
+            .btn{
+                padding: 18px 30px;
+                font-size: 17px;
+            }
+        }
+        .left{
+                width: 95%;
+                margin-bottom: 20px;
+        }
+    }
+}

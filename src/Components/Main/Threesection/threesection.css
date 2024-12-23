@@ -1,0 +1,99 @@
+.threesection {
+    background: #F5FBFF;
+    padding: 30px 0;
+
+    .text {
+        h3 {
+            text-align: center;
+            font-size: 40px;
+            line-height: 52px;
+            color: #001D38;
+            padding: 30px;
+        }
+    }
+}
+
+.boxs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    .box {
+        width: 350px;
+        position: relative;
+        h3{
+            a{
+                color: #001D38;
+                font-size: 22px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        p{
+            font-size: 17px;
+            font-weight: 400;
+            color: #919191;
+            margin-top: 15px;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            margin: 0 0 15px 0;
+            display: block;
+            /* Görüntü kaymasını önler */
+            position: relative;
+            z-index: 1;
+            /* Görüntüyü üstte tut */
+            transition: transform 0.5s ease;
+        }
+
+        &:hover img {
+            transform: scale(0.9);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 52, 20, 0.5);
+            /* Şeffaf kırmızı arka plan */
+            opacity: 0;
+            /* Başlangıçta görünmez */
+            z-index: 2;
+            /* Kırmızı efekt üstte */
+            transition: opacity 0.3s ease;
+            transform: scale(0.9);
+            /* Hover sırasında yumuşak geçiş */
+        }
+
+        &:hover::before {
+            opacity: 1;
+            /* Hover sırasında görünür */
+        }
+        &:hover h3 a{
+            color: #FF3414;
+            border-bottom: 1px solid #FF3414;
+            transition: 0.3s ease;
+        }
+    }
+
+}
+.btns{
+    svg{
+        color:#FF3414 ;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+}
+
+@media(max-width:600px){
+    .boxs{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
